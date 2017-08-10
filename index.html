@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--frontend! person responsible: Megan-->
+<html lang="en-us">
+
+<head>
+    <title>On.Tap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--map stuff-->
+    <style>
+    #map {
+        width: 250px;
+        height: 250px;
+        background-color: grey;
+    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="col-md-12">
+            <div id="topLogo">
+                <img class="center-block img-responsive" src="assets/images/logo.png" alt="top">
+            </div>
+        </section>
+        <section class="beer">
+            <div class="cloud-container">
+                <form class="cloud-form">
+                    <h2>ENTER ZIP CODE</h2>
+                    <input class="form-control center-block img-responsive" id="ex3" type="text" placeholder="00000">
+                   
+                  <h6>Click beer type</h6>
+                </form>
+            </div>
+        </section>
+        <section class="row no-gutters" id="beers">
+            <div class="col-md-3 col-xs-3">
+                <img type="button" id="cider" class="img-small" src="assets/images/cider.png" alt="cider">
+                <img type="button" id="weird" class="img-small" src="assets/images/weird.png" alt="weird">
+            </div>
+            <div class="col-md-2 col-xs-2">
+                <img type="button" id="dark" class="img-rounded" src="assets/images/darkf.png" alt="dark" height="100">
+            </div>
+            <div class="col-md-2 col-xs-2">
+                <img id="medium" class="img" src="assets/images/medf.png" alt="medium">
+            </div>
+            <div class="col-md-2 col-xs-2">
+                <img id="light" class="img-rounded" src="assets/images/lightf.png" alt="light">
+            </div>
+            <div class="col-md-2 col-xs-1">
+                <img id="handle" class="img-rounded" src="assets/images/handle.png" alt="handle">
+            </div>
+        </section>
+        <br>
+        <!--"choose your beer"-->
+        <!--beers-->
+        <!--light-->
+        <!--med-->
+        <!--dark-->
+        <section id="results" class="row no-gutters dblgradbox">
+            <!--display results-->
+            <div id="searchResults"></div>
+            <!--brewery name-->
+            <div id="brewery">•Brewery Name•</div>
+            <!--beer name-->
+            <div id="beer">▬▬▬▬ Beer name ▬▬▬▬</div>
+            <!--description-->
+            <div id="description">Beer description</div>
+            <!--details-->
+            <div id="details"></div>
+            <!--additional details-->
+            <hr>
+            <ul class="list-inline">
+                <li class="list-inline-item" id="abv">abv.100%</li>
+                <li class="list-inline-item" id="ibu">ibu &lt;9000</li>
+            </ul>
+            <hr>
+            <div id="location">
+                <!--address-->
+                <div id="address">
+                    <hr>
+                    <h2>Where to Find:</h2>
+                    <br>
+                </div>
+                <!--map-->
+                <div id="map"></div>
+            </div>
+            <!-- end of #location -->
+    </div>
+    <br>
+    <br>
+    <!--uber/lyft button-->
+    <section class=drunks>
+        <div class=row>
+            <div class="col-md-1 col-sm-1 col-xs-1"></div>
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <img class="lyft" src="assets/images/lyft.png" alt="lyft">
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <img class="uber" src="assets/images/uber.png" alt="uber">
+            </div>
+    </section>
+    </div>
+    <!-- end of .container -->
+    <footer>
+        <div class="copy">
+            Copyright &copy; themostamazinggroup 2017
+        </div>
+    </footer>
+    <!--list of some sort - history, favorites, etc-->
+    </div>
+    <!--google maps display-->
+    <script id="maps" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwJEzk5FbNL1fwKBxifUONzQMvDdYShqs&libraries=places">
+    </script>
+    <script type="text/javascript" src="assets/javascript/onTap.js"></script>
+</body>
+
+</html>
